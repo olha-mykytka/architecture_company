@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="Architecture Website" />
+    <meta name="author" content="Olha Mykytka"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.min.css" />
+
+    <!-- favicon stuff -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+
+    <title>Home</title>
+  </head>
+  <body>
+    <div id="headerWrapper">
+      <header>
+        <a href="index.html"><img src="images/logo1x.png" alt="logo" width="49" height="50" srcset="images/logo1x.png 1x, images/logo2x.png 2x, images/logo3x.png 3x"></a>
+        <h1>Architectural Design</h1>
+      </header>
+    </div>
+    <div id="navWrapper">
+      <nav>
+        <a class="active" href="#">Learn</a>
+        <a href="#">Practice</a>
+        <a href="#">Implement</a>
+      </nav>
+    </div>
+    <div id="mainWrapper">
+      <main>
+        <picture class="hero">
+          <source media="(min-width: 1500px)" srcset="images/design_process_large.webp">
+          <source media="(min-width: 1000px)" srcset="images/design_process_medium.webp">
+          <source media="(max-width: 999px)" srcset="images/design_process_small.webp">
+          <img src="images/design_process.jpg" alt="Interior Design Process" title="Pexels image">
+        </picture>
+        <h2>My Video with Captions</h2>
+        <video id="video" controls>
+          <source src="media/video_olha_mykytka_website.mp4" type="video/mp4" />
+          <source src="media/video_olha_mykytka_website_.webm" type="video/webm" />
+          <track
+            label="English"
+            kind="subtitles"
+            srclang="en"
+            src="media/olha-en.vtt"
+            default
+          />
+          <track
+            label="Español"
+            kind="subtitles"
+            srclang="es"
+            src="media/olha-es.vtt"
+          />
+        </video>
+        <details>
+          <summary>Video Transcript</summary>
+          <p>
+            Hi! Nice to meet you! My name is Olga. I am a student at Utah Valley University. I Study Web Design & App Development, with an emphasis in Interaction Design, as well as I have a minor in Event Planning. Originally from Ukraine, I moved to the United States about 8 years ago and I call Utah my second home now. I absolutely love UVU and its involvement; I am currently involved as a Foundation Ambassador here in school and it has been an amazing experience. I am really excited to be graduating next year! I have 2 more semesters to go after Spring 2025, so I am really excited about that. I would say that my favorite part about being a student here is.. is how involved I can get and all the opportunities that UVU creates for those who want those opportunities. Thank you, bye!
+          </p>
+        </details>
+      </main>
+    </div>
+    <div id="footerWrapper">
+      <footer>
+        <p>© <span id="year">2025</span> | Olha Mykytka</p>
+      </footer>
+    </div>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
